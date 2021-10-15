@@ -1,0 +1,106 @@
+#page {background-image: url(/pexels-artem-podrez-7232510.jpg);
+	/* background-repeat: no-repeat; */
+	background-size: contain;
+	/* border:1px solid black; */
+	width:60%;
+	padding:30px;
+	height:450px;
+
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 60%  auto;
+	grid-template-rows: 70%  10%  20% ;
+	grid-template-areas:
+	"clavier 		pendu"
+	"nouvellepartie pendu"
+	"mot			pendu";
+}
+
+#clavier {
+	grid-area: clavier;
+}
+
+.pendu {
+	grid-area: pendu;
+}
+
+.lien {
+	grid-area: nouvellepartie;
+}
+
+#mot {
+	grid-area: mot;
+}
+
+h1 {
+	font-size:30px;
+	font-family:Arial, sans serif;
+	text-align: center;
+}
+
+img.pendu {
+	/* float:right; */
+}
+
+h2 {
+	font-size:16px;
+	font-family:Arial, sans-serif;
+	text-align: center;
+}
+
+#mot {
+	margin:0px 0 0 0;
+	clear:both;
+	top:100px;
+	text-align: center;
+}
+
+#mot td {
+	padding:10px;
+	background-color:#1ee193;
+	border:2px inset black;
+	width:30px;
+	height:30px;
+	font-weight:bold;
+	font-size:1.5em;
+	text-align:center;
+}
+
+ #mot p{
+	visibility:hidden;
+}
+
+#clavier{
+	/* border:4px outset black; */
+	padding:10px;
+	text-align: center;
+}
+
+#clavier td {
+	background-color:white;
+	border:1px solid black;
+	width:25px;
+	height:25px;
+	text-align:center;
+	font-weight:bold;
+	cursor:pointer;
+}
+
+a.lien{
+	color:rgb(121, 1, 1);
+	text-decoration:none;
+	font-size:20px;
+	text-align: center;
+	
+	grid-template-columns: 1fr  0fr;
+
+}
+
+a.lien:hover{
+	color:red;
+	font-weight:bold;
+	text-decoration:underline;
+	text-align: center;
+}
