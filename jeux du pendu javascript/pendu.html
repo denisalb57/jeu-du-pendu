@@ -7,13 +7,13 @@
 				let motSecret;
 				
 				let now=new Date();			// Date d'aujourd'hui
-				let tableauMot=new Array();	// Le tableau qui contient les lettres du mot � trouver
+				let tableauMot=new Array();	// Le tableau qui contient les lettres du mot à trouver
 				let mots=new Array();		// Le tableau qui contient tous les mots possibles
 				
-				let tailleMot;				// Le nombre de lettres du mot � trouver
-				let coupsManques=0;			// Le nombre de lettres fausses essay�es
-				let lettresTrouvees=0;		// Le nombre de lettres trouv�es
-				let fini=false;				// true si le jeu est termin�
+				let tailleMot;				// Le nombre de lettres du mot à trouver
+				let coupsManques=0;			// Le nombre de lettres fausses essayées
+				let lettresTrouvees=0;		// Le nombre de lettres trouvées
+				let fini=false;				// true si le jeu est terminé
 				
 				mots[0]="TITANESQUE";
 				mots[1]="ANABELLE";
@@ -94,14 +94,14 @@
 					// Si la couleur de fond est lightgreen, c'est qu'on a déjà essayé - on quitte la fonction
 					if(element.style.backgroundColor=="lightGreen" ||fini) return;
 					
-					// On r�cup�re la lettre du clavier et on met la touche en lightgreen (pour signaler qu'elle est cliqu�e)
+					// On récupére la lettre du clavier et on met la touche en lightgreen (pour signaler qu'elle est cliquée)
 					let lettre=element.innerHTML;
 					changeCouleur(element,"lightGreen");
 					
 					// On met la variable trouve à false;
 					let trouve=false;
 					
-					// On parcours chaque lettre du mot, on cherche si on trouve la lettre s�l�ectionn�e au clavier
+					// On parcours chaque lettre du mot, on cherche si on trouve la lettre séléectionnée au clavier
 					for(let i=0; i<tailleMot; i++) {
 						
 						// Si c'est le cas :
