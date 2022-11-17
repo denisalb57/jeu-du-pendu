@@ -1,10 +1,9 @@
-#page {background-image: url(/pexels-artem-podrez-7232510.jpg);
-	/* background-repeat: no-repeat; */
+#page {background-color:rgb(200, 200, 255) ;
+
 	background-size: contain;
 	/* border:1px solid black; */
-	width:60%;
 	padding:30px;
-	height:450px;
+
 
 }
 
@@ -57,7 +56,7 @@ h2 {
 
 #mot td {
 	padding:10px;
-	background-color:#1ee193;
+	background-color:#b3ffe1;
 	border:2px inset black;
 	width:30px;
 	height:30px;
